@@ -9,7 +9,7 @@ function TodoList() {
     useEffect(() => {
         const savedTodos = localStorage.getItem("localTasks");
         if(savedTodos !== ''){
-            setTodos(JSON.parse(savedTodos));
+            setTodos(JSON.parse(savedTodos) ?? []);
         }
     }, []);
    

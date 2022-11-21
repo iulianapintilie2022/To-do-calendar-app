@@ -19,11 +19,11 @@ export default function Navbar() {
 return (
   <nav className="sidebar">
         <div className="sidebar_container">
-        <a href="#"><BsHouseFill/></a>
-          <a href="#"><BsFillMenuButtonWideFill/></a>
-          <a href="#"><BsType/></a>
-          <a href="#"><BsFillCalendarFill/></a>
-          <a href="#"><BsFillBookmarkHeartFill/></a>
+<BsHouseFill/>
+       <BsFillMenuButtonWideFill/>
+        <BsType/>
+    <BsFillCalendarFill/>
+         <BsFillBookmarkHeartFill/>
          
           <div className="buttons_container">
           <button className="dark-mode-btn sidebar_button" onClick={myFunction}>{isClicked ? <BsFillMoonStarsFill/>:<BsBrightnessAltHighFill/>}</button>
