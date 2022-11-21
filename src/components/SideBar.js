@@ -19,11 +19,8 @@ export default function Navbar() {
 return (
   <nav className="sidebar">
         <div className="sidebar_container">
-<BsHouseFill/>
-       <BsFillMenuButtonWideFill/>
-        <BsType/>
-    <BsFillCalendarFill/>
-         <BsFillBookmarkHeartFill/>
+          <a href="#"><BsFillCalendarFill></BsFillCalendarFill></a>
+
          
           <div className="buttons_container">
           <button className="dark-mode-btn sidebar_button" onClick={myFunction}>{isClicked ? <BsFillMoonStarsFill/>:<BsBrightnessAltHighFill/>}</button>
