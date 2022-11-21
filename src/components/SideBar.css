@@ -1,0 +1,42 @@
+.sidebar{
+background-color: #003E1F;
+width: 3rem;
+margin: 0;
+height: 110vh;
+position: fixed;
+}
+a{
+    color: #97c489;;
+    margin: 5px;
+    padding: 6px;
+    font-size:x-large;
+    display: block;
+    text-align: end;  
+}
+a:hover{
+    color: white;
+}
+.sidebar_container{display: grid;
+    flex-direction:column;
+}
+
+.buttons_container{
+    position: relative;
+}
+.sidebar_button{
+    background-color: transparent;
+    color:#97c489;;
+    border: 0;
+    font-size: x-large;
+    margin: 5px;
+    padding: 6px;
+    display: block;
+    text-align: end; 
+}
+.sidebar_button:hover{
+    color: white;
+}
+.sidebar:hover{
+    background-color: #065930;
+   
+}
