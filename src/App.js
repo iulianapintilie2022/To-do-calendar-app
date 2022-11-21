@@ -16,12 +16,12 @@ function App() {
   <div>
     <SideBar></SideBar>
     <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="calendar" element={<Calendar />} />
-        <Route path="journal" element={<Journal />} />
-        <Route path="tasks" element={<Tasks />} />
-        <Route path="login" element={<Login />} />
-        <Route path="bookmarks" element={<Bookmarks />} />
+        <Route path="to-do-list/" element={<Home />} />
+        <Route path="to-do-list/calendar" element={<Calendar />} />
+        <Route path="to-do-list/journal" element={<Journal />} />
+        <Route path="to-do-list/tasks" element={<Tasks />} />
+        <Route path="to-do-list/login" element={<Login />} />
+        <Route path="to-do-list/bookmarks" element={<Bookmarks />} />
       </Routes>
      
 
