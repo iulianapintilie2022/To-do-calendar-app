@@ -52,6 +52,7 @@ function TodoForm(props) {
                     <button onClick={handleSubmit} className='todo-button'>
                         Add todo
                     </button>
+                    {/* here should be an input type date and time to choose when your to do is due*/}
                 </>
             )}
         </form>

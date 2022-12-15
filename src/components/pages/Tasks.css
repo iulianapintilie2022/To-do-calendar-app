@@ -1,3 +1,4 @@
+
 .container{display:flex;
     flex-direction: row }
   .todo-app {
@@ -8,10 +9,8 @@
     min-height: 600px;
     text-align: center;
     margin: auto;
-   
     border-radius: 10px;
     padding-bottom: 32px;
-  
     /* From https://css.glass */
         background: rgba(236, 238, 248, 0.04);
         border-radius: 16px;
@@ -25,16 +24,13 @@
     font-weight: 400;
     font-size: 2rem;
     margin-bottom: 1rem;
-   
     text-align: center;
     letter-spacing: 0.15em;
     margin: 0 0;
     padding: 0 0;
     color:#1e4b09;
-  
   }
   h1 {
-    
   font-family: 'Abhaya Libre';
     font-style: normal;
     font-weight: 400;
@@ -42,40 +38,32 @@
     padding: 0;
     margin: 0;
     margin-bottom: 1rem;
-   
     text-align: center;
     letter-spacing: 0.15em;
-  
     color:#1e4b09;
   }
-  
   .complete {
     text-decoration: line-through;
     opacity: 0.4;
   }
-  
   .todo-form {
    align-items: center;
    margin: auto;
    padding: auto;
   width: fit-content;
   }
-  
   .todo-input {
     padding: 14px 32px 14px 16px;
     border-radius: 4px 0 0 4px;
     border: 2px solid #121212;
-       
     outline: none;
     width: 320px;
     background: transparent;
-    color:#50982e;
+    color:#000000;
   }
-  
   .todo-input::placeholder {
     color:#003E1F;
   }
-  
   .todo-button {
     padding: 16px;
     border: none;
@@ -87,31 +75,21 @@
     font-weight: 400;
     font-size: 1rem;
     background:  #003E1F;
-    border-radius: 40px;
-        
-   
     text-align: center;
-  
-    color:#97c489;
-    
+    color:#fafff8;
   }
-  
   .todo-input.edit {
-    border: 2px solid #50982e;
-    
+    border: 2px solid #010100;
   }
-  
   .todo-button.edit {
     background: #53a72c;
     padding: 16px 22px;
   }
-  
   .todo-container {
     display: flex;
     flex-direction: row;
     position: relative;
   }
-  
   .todo-row {
     display: flex;
     justify-content: space-between;
@@ -123,26 +101,31 @@
     border-radius: 50px;
     padding: 16px;
     width: 85%;
-   
-   
   }
-  
-  
-  
-  
-  
   .icons {
     display: flex;
     align-items: center;
     font-size: 24px;
     cursor: pointer;
   }
-  
   .delete-icon {
     margin-right: 5px;
     color: black;
   }
-  
   .edit-icon {
     color: #1e4b09;
   }
+  @media screen and (max-width: 630px){
+    .todo-app{ 
+      width: 80%;
+      position: relative;
+    }
+    } 
+    @media screen and (max-width: 420px){
+      .todo-input{
+        width: fit-content;
+      }
+      .todo-app{
+        right: -1.5rem;
+      }
+      }

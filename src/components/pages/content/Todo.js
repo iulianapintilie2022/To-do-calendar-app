@@ -30,6 +30,7 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
                 {todo.text}
             </div>
             <div className='icons'>
+                {/* here it should be a time stamp for when the to do starts and ends*/}
                 <RiCloseCircleLine
                     onClick={() => removeTodo(todo.id)}
                     className='delete-icon'

@@ -1,0 +1,126 @@
+.calendar{
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: baseline;
+    align-content:center;
+    text-align: center;
+    justify-self: center;
+    width:auto;
+    flex-direction: row;
+   margin: auto;
+   border-radius: 10px;
+padding: auto;
+}
+.calendar_container1{
+
+width: 300px;
+min-height: 150px;
+text-align: center;
+margin: 0;
+padding: 0;
+border-radius: 10px;
+top: 8rem;
+position: relative;
+
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.5);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.7px);
+-webkit-backdrop-filter: blur(6.7px);
+border: 1px solid rgba(255, 255, 255, 0.04);}
+        
+.calendar_container2{
+width: 300px;
+min-height: 300px;
+text-align: center;
+margin: 0 0 0 0;
+padding: 0;
+border-radius: 10px;
+top: 8rem;
+position: relative;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.5);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.7px);
+-webkit-backdrop-filter: blur(6.7px);
+border: 1px solid rgba(255, 255, 255, 0.04);
+}
+.calendar_button{
+    background-color: transparent;
+    color:black;
+    border: 0;
+    font-size: x-large;
+    justify-content:space-between;
+    align-items: baseline;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    letter-spacing: 0.15em;
+    position:fixed;
+    cursor: pointer;
+}
+.events{
+    flex-direction: column;
+}
+span{
+    margin: 1rem;
+    padding: 1rem;
+}
+h3{
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    letter-spacing: 0.15em;
+    position:absolute;
+    right: 20%;
+    top: 5rem;
+    color:rgb(35, 59, 33);
+}
+.eventtitle-input{
+    background: transparent;
+    outline: none;
+    color:#000000;
+}
+@media screen and (max-width: 770px){
+    .calendar{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    h3{   right: 10%;
+    top: 2%;
+}
+   .calendar_container1{
+   height: auto;
+   width: 50%;
+   }
+   .calendar_container2{
+    height: auto;
+    width: 50%;
+   } 
+    }
+@media screen and (max-width: 470px) {
+    h3{ font-size:x-large;
+    }
+    .calendar_container1{
+        height: auto;
+        width: 50%;
+        left: 4rem;
+        }
+    .calendar_container2{
+        height: auto;
+        width: 80%;
+        left: 1.5rem;
+       }
+}

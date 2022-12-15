@@ -1,21 +1,20 @@
 .sidebar{
-background-color: #003E1F;
+background-color:#37513b ;
 width: 3rem;
 margin: 0;
 height: 110vh;
 position: fixed;
 }
-a{
-    color: #97c489;;
-    margin: 5px;
-    padding: 6px;
+.links{
+    color: white;
     font-size:x-large;
     display: block;
-    text-align: end;  
+    text-align: center; 
+    margin: 0.5rem;
+    padding: 0px;
+   
 }
-a:hover{
-    color: white;
-}
+
 .sidebar_container{display: grid;
     flex-direction:column;
 }
@@ -25,18 +24,16 @@ a:hover{
 }
 .sidebar_button{
     background-color: transparent;
-    color:#97c489;;
+    color: white;
     border: 0;
     font-size: x-large;
-    margin: 5px;
+    margin: 6px;
     padding: 6px;
     display: block;
-    text-align: end; 
+    text-align: center; 
 }
-.sidebar_button:hover{
-    color: white;
-}
+
 .sidebar:hover{
-    background-color: #065930;
+    background-color:#34673c ;
    
 }
